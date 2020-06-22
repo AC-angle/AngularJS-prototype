@@ -58,17 +58,47 @@ startapp.config(['$stateProvider', '$urlRouterProvider', '$controllerProvider', 
 
   $stateProvider
 
-    //  主界面
-    .state("home", {
-      url: "/home",
-      templateUrl: addToken("htmls/Home/mod.html"),
+    // 输入控制类指令
+    .state("InputCtrlDirectives", {
+      url: "/InputCtrlDirectives",
+      templateUrl: addToken("htmls/inputCtrl@Directives/mod.html"),
       resolve: {
-        delay: startapp.asyncjs('htmls/Home/mod.js')
+        delay: startapp.asyncjs('htmls/inputCtrl@Directives/mod.js')
       },
-      controller: "HomeController"
+      controller: "InputCtrlDirectivesController"
+    })
+
+    // 金额类过滤器
+    .state("MoneyFilters", {
+      url: "/MoneyFilters",
+      templateUrl: addToken("htmls/money@Filters/mod.html"),
+      resolve: {
+        delay: startapp.asyncjs('htmls/money@Filters/mod.js')
+      },
+      controller: "MoneyFiltersController"
+    })
+
+    // 日期或时间类组件
+    .state("TimeComponents", {
+      url: "/TimeComponents",
+      templateUrl: addToken("htmls/time@Components/mod.html"),
+      resolve: {
+        delay: startapp.asyncjs('htmls/time@Components/mod.js')
+      },
+      controller: "TimeComponentsController"
+    })
+
+    // 日期或时间类过滤器
+    .state("TimeFilters", {
+      url: "/TimeFilters",
+      templateUrl: addToken("htmls/time@Filters/mod.html"),
+      resolve: {
+        delay: startapp.asyncjs('htmls/time@Filters/mod.js')
+      },
+      controller: "TimeFiltersController"
     });
 
-  $urlRouterProvider.otherwise("/home");
+  $urlRouterProvider.otherwise("/InputCtrlDirectives");
 
 }]).run(['$rootScope', '$state', function ($rootScope, $state) {
 

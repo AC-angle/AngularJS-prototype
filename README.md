@@ -1,6 +1,10 @@
 # AngularJS 原型
 🎯 基于Angular JS搭建的原型项目。
 
+- 主分支master用于维护常用的组件、指令和过滤器等，其余分支为各个版本的原型，比如手机端、移动端和通用Grunt版本等。
+
+- 如果你希望在此维护自己的分支可以告知我们加入[AC-angle](https://github.com/AC-angle)，分支名字请以自己的名称开头。
+
 ## 贡献者
 
 - [心叶](https://github.com/yelloxing)（yelloxing@gmail.com）

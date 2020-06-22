@@ -1,0 +1,84 @@
+div.main {
+    font-size: 0;
+    color: #555;
+    font-family: inconsolata;
+    line-height: 0.18rem;
+    font-weight: normal;
+    white-space: nowrap;
+    transform-origin: 0 0;
+}
+
+div.main>div {
+    display: inline-block;
+    font-size: 16px;
+    white-space: normal;
+    vertical-align: top;
+    height: 100vh;
+    overflow: auto;
+}
+
+div.main>div.menu {
+    width: 220px;
+    padding: 0 20px 20px 20px;
+    background: #fafafa;
+    overflow-y: auto;
+    user-select: none;
+}
+
+div.main>div.vie {
+    width: calc(100vw - 220px);
+    line-height: 2em;
+}
+
+div.main>div.menu>h2 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 20px;
+    text-align: center;
+    color: #41b783;
+    padding-top: 220px;
+    background-image: url(../images/AC-angle.png);
+    background-repeat: no-repeat;
+    background-position: center 10px;
+    background-size: 100% auto;
+}
+
+
+div.main>div.menu>input {
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #dedede;
+}
+
+div.main>div.menu>h4 {
+    color: #454545;
+    font-size: 18px;
+    margin-top: 20px;
+    display: block;
+}
+
+div.main>div.menu>ul {
+    margin-top: 20px;
+}
+
+div.main>div.menu>ul>li {
+    color: #2194ce;
+    text-decoration: none;
+    line-height: 1.8em;
+    cursor: pointer;
+    position: relative;
+
+}
+
+div.main>div.menu>a {
+    background-color: #529bcf;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    display: block;
+
+}

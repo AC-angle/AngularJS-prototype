@@ -4,7 +4,9 @@
 (function () {
   var cssFiles = [
     'styles/normalize.css', // 兼容样式
-    'styles/common.css' // 公共样式
+    'styles/common.css', // 公共样式
+    'styles/menu.css', // 导航样式
+    'styles/style.css' // 公共样式
   ];
   var jsFiles = [
 
