@@ -297,3 +297,28 @@ div.main>div.menu>a {
     font-size: 25px;
     margin: 10px 0 20px 0;
 }
+
+.example-page {
+    line-height: 2em;
+    padding: 0 20px;
+}
+
+.example-page>h4 {
+    color: red;
+}
+
+.example-page>h5 {
+    color: blue;
+}
+
+.example-page em {
+    font-style: normal;
+    color: rgb(36, 163, 248);
+    font-size: 12px;
+}
+
+.example-page .line {
+    border-bottom: 1px dashed red;
+    width: calc(100vw - 260px);
+    margin: 20px 0;
+}

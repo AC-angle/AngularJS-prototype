@@ -19,6 +19,9 @@
     /* 配置文件 */
     'libs/config.js', // 项目配置文件
 
+    /* 过滤器 */
+    'libs/module/filters/number.js',// 数字或金额格式化
+
   ];
 
   if (typeof (exports) != "undefined") {

@@ -2,6 +2,7 @@ ctrlapp.register.controller('MoneyFiltersController', ['$scope', function ($scop
 
     $scope.initMethod = function () {
 
+      
 
     };
 
