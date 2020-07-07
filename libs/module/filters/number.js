@@ -1,16 +1,21 @@
+
+/* https://github.com/AC-angle/AngularJS-prototype/blob/master/libs/module/filters/number.js */
+
 /**
  * @author yelloxing
  * 2020-07-06
  * 数字或金额格式化
  *
- * 12345.12  ->  12,345.12
- * ￥12345.1 ->  ￥12345.1
+ * 【用例】
+ * {{12345.123|numberFtr:2}}  ->  12,345.12
+ * {{￥12345.1}|numberFtr} ->  ￥12,345.1
  * 
  */
 (function (window, angular, undefined) {
     "use strict";
 
     angular.module('ui.libraries').filter('numberFtr', ["$filter", function ($filter) {
+
         return function (input, dot) {
             input = input == undefined ? "" : (input + "");
 
